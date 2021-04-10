@@ -1,0 +1,77 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/9d/7b/57/9d7b57c5efd06c395d6b4dedc5b38fa1.jpg");
+
+    font-family: "Dosis", sans-serif;
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: white;
+}
+.countries {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+    color: #f8961e;
+    justify-content: space-around;
+    align-items: center;
+    perspective: 1000px;
+}
+.card {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 0.1em;
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    border-radius: 1em;
+    position: absolute;
+}
+
+.front {
+    background-color: #ffe8d6;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-color: #f4a261;
+    color: black;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+div.mexico:hover,
+div.papau-new-guinea:hover,
+div.iceland:hover,
+div.south-korea:hover,
+div.sweden:hover,
+div.georgia:hover,
+div.honduras:hover,
+div.tunisia:hover,
+div.austria:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
