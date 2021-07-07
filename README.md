@@ -8,4 +8,4 @@ The visuals of the app is shown below:
 
 
 
-![](/images/ClockApp_typescript.png)
+![](/images/flashcards1.png) ![](/images/flashcards2.png)
